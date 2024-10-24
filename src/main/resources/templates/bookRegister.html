@@ -29,7 +29,7 @@
 						aria-current="page" href="/">Home</a></li>
 					<li class="nav-item"><a class="nav-link text-white"
 						href="available_books">Available Books</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="#">My
+					<li class="nav-item"><a class="nav-link text-white" href="my_books">My
 							Books</a></li>
 				</ul>
 				<div>
@@ -44,7 +44,7 @@
 	
 		<h4 class="text-center">New Book Register</h4>
 		
-		<form class="col-md-4 offset-md-4">
+		<form class="col-md-4 offset-md-4" th:Action="@{/save}" method= "post">
 			<div class="mb-3">
 				<label for="nome" class="form-label">Nome address</label> <input
 					type="text" class="form-control" name="nome">
