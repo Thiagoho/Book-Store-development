@@ -55,7 +55,7 @@
 					<td th:text="${b.nome}"></td>
 					<td th:text="${b.author}"></td>
 					<td th:text="${b.preco}"></td>
-					<td><a class="btn btn-secondary btn-sm">Add To Mybook</a></td>
+					<td><a class="btn btn-secondary btn-sm" th:href="@{/mylist/{id}(id=${b.id})">Add To Mybook</a></td>
 				</tr>
 			</tbody>
 		</table>
