@@ -9,7 +9,9 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
-<title>Book Store</title>
+	<title>Book Store</title>
+	<script src="https://kit.fontawesome.com/0faddc1af8.js"
+	crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg bg-dark">
@@ -27,8 +29,8 @@
 						aria-current="page" href="/">Home</a></li>
 					<li class="nav-item"><a class="nav-link text-white"
 						href="available_books">Available Books</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="my_books">My
-							Books</a></li>
+					<li class="nav-item"><a class="nav-link text-white"
+						href="my_books">My Books</a></li>
 				</ul>
 				<div>
 					<a class="nav-link text-white" href="book_register">New Book
@@ -55,7 +57,10 @@
 					<td th:text="${b.nome}"></td>
 					<td th:text="${b.author}"></td>
 					<td th:text="${b.preco}"></td>
-					<td><a class="btn btn-secondary btn-sm" th:href="@{/mylist/{id}(id=${b.id})">Add To Mybook</a></td>
+					<td><a class="btn btn-secondary btn-sm"
+						th:href="@{/mylist/{id}(id=${b.id})}">Add To Mybook</a> <a><i
+							class="fa-solid fa-trash"></i></a> <a><i
+							class="fa-solid fa-pen-to-square"></i></a></td>
 				</tr>
 			</tbody>
 		</table>
