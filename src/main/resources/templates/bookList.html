@@ -58,9 +58,10 @@
 					<td th:text="${b.author}"></td>
 					<td th:text="${b.preco}"></td>
 					<td><a class="btn btn-secondary btn-sm"
-						th:href="@{/mylist/{id}(id=${b.id})}">Add To Mybook</a> <a><i
-							class="fa-solid fa-trash"></i></a> <a><i
-							class="fa-solid fa-pen-to-square"></i></a></td>
+						th:href="@{/mylist/{id}(id=${b.id})}">Add To Mybook</a> 
+					<a style="color:blue"><i class="fa-solid fa-pen-to-square ms-4"></i></a>
+					<a style="color:red"><i class="fa-solid fa-trash ms-4"></i></a> 
+					</td>
 				</tr>
 			</tbody>
 		</table>
