@@ -1,50 +1,80 @@
 <!doctype html>
 <html lang="en" xmlns:th="https://www.thymeleaf.com">
   <head>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Book Store</title>
+    <style>
+      /* Definindo o corpo para ocupar a altura total da página */
+      body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      /* Estilo para o conteúdo principal */
+      .content {
+        flex: 1;
+      }
+      /* Estilo para o rodapé */
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
   </head>
-<body>	
-	<nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">Book Store</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="available_books">Available Books</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="my_books">My Books</a>
-        </li>
-        </ul>
-    	<div>
-          <a class="nav-link text-white" href="book_register">New Book Register</a>
+  <body>
+    <!-- Cabeçalho da página -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Book Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="available_books">Available Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="my_books">My Books</a>
+            </li>
+          </ul>
+          <div>
+            <a class="nav-link text-white" href="book_register">New Book Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    	</div>
+    <!-- Conteúdo Principal -->
+    <div class="container text-center my-5 d-flex align-items-center content">
+      <div class="text-left" style="flex: 1;">
+        <h1 style="color: red;">Bem-vindo à nossa loja de livros, onde cada página é uma nova aventura!</h1>
+        <h6>
+          "Aqui você encontrará uma curadoria especial de títulos, desde os clássicos atemporais até as últimas novidades,
+          perfeitos para todos os gostos e idades. Explore nossos gêneros diversificados e descubra histórias que emocionam,
+          ensinam e inspiram. Quer você esteja em busca de uma leitura leve ou de uma trama envolvente, nosso acervo foi
+          pensado para oferecer a você uma experiência completa. Embarque nessa jornada literária e encontre seu próximo livro
+          favorito conosco. Boa leitura e aproveite a visita!"
+        </h6>
+      </div>
+      <div style="flex: 1;">
+        <img src="/imagens/books.png" width="100%" style="max-width: 360px; height: auto;" alt="Imagem de livros"/>
+      </div>
     </div>
-  </div>
-</nav>
-	<div class="container text-center my-5">
-		<h1>WELCOME TO NEW BOOK STORE</h1>
-		<h6>Lorem ipsum About Writebox
-x
-Writebox is a text editor designed with simplicity and distraction-free writing.
- While many applications tend to become feature-rich and complex over time, Writebox takes a different approach.
-  Writebox continues to focus on the essential features required for writing on a computer,
-   providing an environment that allows writers to concentrate without unnecessary distractions.
-Writebox was developed and released by @shibuyak in 2011 and has been maintained for over a decade since then.
-To learn more about our service policy, please refer to Policies.
-Enjoy writing with Writebox!</h6>
-	<img src="/imagens/books.png" width="360"/>
-	</div>
-</body>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Criado por Thiago Henrique de Oliveira Sales</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
