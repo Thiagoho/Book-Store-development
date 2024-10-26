@@ -16,7 +16,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand text-white" href="#">Book Store</a>
+			<a class="navbar-brand text-white" href="#">Loja de Livros</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,8 +34,7 @@
 						href="my_books">My Books</a></li>
 				</ul>
 				<div>
-					<a class="nav-link text-white" href="book_register">New Book
-						Register</a>
+					<a class="nav-link text-white" href="book_register">Cadastro de Livro</a>
 
 				</div>
 			</div>
@@ -59,7 +58,7 @@
 					<td th:text="${b.author}"></td>
 					<td th:text="${b.preco}"></td>
 					<td><a class="btn btn-secondary btn-sm"
-						th:href="@{/mylist/{id}(id=${b.id})}">Add To Mybook</a> 
+						th:href="@{/mylist/{id}(id=${b.id})}">Adicionar Livros</a> 
 					<a style="color:blue" th:href="@{/editBook/{id}(id=${b.id})}"><i class="fa-solid fa-pen-to-square ms-4"></i></a>
 					<a style="color:red" th:href="@{/deleteBook/{id}(id=${b.id})}"><i class="fa-solid fa-trash ms-4"></i></a> 
 					</td>
