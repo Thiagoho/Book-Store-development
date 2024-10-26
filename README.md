@@ -5,7 +5,7 @@ dinâmicas, JPA para o mapeamento dos dados, e MYSQL como o banco de relacional.
     A aplicação oferece um ambiente de gestão de livros fácil de usar, permitindo o registro de informações</br>
 como título, author, preco, estoque, entre outros.</p>
 <h2>📃Ferramentas e Dependência Utilizadas</h2>
-<h3>📁Backend(Spring Boot</h3><p>
+<h3>📁Backend(Spring Boot)</h3><p>
  🎬 Para desenvolver o projeto, utilizamos algumas das principais ferramentas de ecossistemas java:</br>
 📄 Projeto Spring Boot: </br>
 📄 Thymeleaf:</br>
